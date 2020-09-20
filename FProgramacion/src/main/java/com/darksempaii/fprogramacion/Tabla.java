@@ -15,7 +15,17 @@ public class Tabla {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String cabecera = "\n\tPRONOSTICO DE CLIMA:\n";
+        cabecera += "\n\tDia\t\tMañana\tNoche\tCondiciones\n";
+        cabecera += "\t---\t\t-------\t----\t-----------\n";
+
+        String pronostico = "\tDomingo\t\t25C\t23C\tSoleado\n";
+        pronostico += "\tLunes\t\t32C\t22C\tSoleado\n";
+        pronostico += "\tMartes\t\t20C\t15C\tNublado\n";
+        pronostico += "\tJuevez\t\t29C\t20C\tparcialmente soleado\n";
+        pronostico += "\tMartes\t\t25C\t18C\tDespejado\n";
+
+        System.out.print(cabecera + pronostico);
     }
-    
+
 }
