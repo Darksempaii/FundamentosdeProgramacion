@@ -12,18 +12,18 @@ public class OperacionesDosNumeros {
         int resta;
         int division;
         int multiplicacion;
-        String resultado;
         System.out.println("suma, resta, multiplicacion, divicion de numeros");
         System.out.println("Dame un numero: ");
         num1 = sc.nextInt();
         System.out.println("Dame otro numero: ");
         num2 = sc.nextInt();
         suma = num1 + num2;
+        System.out.println("El resultado de la divicion es: " + suma);
         resta = num1 - num2;
+        System.out.println("El resultado de la divicion es: " + resta);
         multiplicacion = num1 * num2;
+        System.out.println("El resultado de la divicion es: " + multiplicacion);
         division = num1 / num2;
-        System.out.println("Introdusca la operacion a realizar(suma, resta, multiplicacion, division): ");
-        resultado = sc.nextLine();
         System.out.println("El resultado de la divicion es: " + division);
     }
 
