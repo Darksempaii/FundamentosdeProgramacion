@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.darksempaii.fprogramacion;
 
-/**
- *
- * @author Darksempaii
- */
+import static java.lang.Integer.parseInt;
+import javax.swing.*;
+
+
 public class EntradadeDatos {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        String nombre_usuario = JOptionPane.showInputDialog("Introduce tu nombre por favor");
+        String edad = JOptionPane.showInputDialog("Introduce tu nombre por favor");
+        int edad_usuario;
+        edad_usuario = parseInt(edad);
+        edad_usuario++;
+        System.out.println("hola " + nombre_usuario + " el siguiente año tendras " + edad_usuario + " años");
+        JOptionPane.showMessageDialog(null, "hola " + nombre_usuario + " el siguiente año tendras " + edad_usuario + " años");
     }
     
 }
