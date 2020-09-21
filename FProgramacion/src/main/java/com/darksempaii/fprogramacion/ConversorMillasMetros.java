@@ -5,6 +5,8 @@
  */
 package com.darksempaii.fprogramacion;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Darksempaii
@@ -15,7 +17,13 @@ public class ConversorMillasMetros {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese la distancia en millas: ");
+        String dato = sc.nextLine();
+        double distancia = Double.parseDouble(dato);
+        double metros = distancia * 1609;
+        System.out.println("La distancia en Metros es: " +metros);
+//mi = 1609mw;
     }
-    
+
 }
