@@ -1,27 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.darksempaii.fprogramacion;
-import java.util.Scanner;
-/**
- *
- * @author Darksempaii
- */
+
+import javax.swing.JOptionPane;
+
+
 public class AreaCirculo {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        //declaracion de PI
         double area=Math.PI;
-        double radio;
-        System.out.println("ingrese el radio: ");
-        radio=sc.nextDouble();
-        area=area*radio*radio;
-        System.out.println("El area del circulo es: "+area );
+        //Entrada Grafica
+        String radio1 = JOptionPane.showInputDialog("Ingrese el radio del circulo");
+        //Conversion de String a Double
+        double radio2 = Double.parseDouble(radio1);
+        //Operacion Aritmetica
+        area=area*radio2*radio2;
+        //Salida grafica
+        JOptionPane.showMessageDialog(null, "El area del circulo es: " + area);
                 
     }
 
