@@ -13,9 +13,9 @@ public class OperacionesDosNumeros {
         int division;
         int multiplicacion;
         System.out.println("suma, resta, multiplicacion, divicion de numeros");
-        System.out.println("Dame un numero: ");
+        System.out.print("Dame un numero: ");
         num1 = sc.nextInt();
-        System.out.println("Dame otro numero: ");
+        System.out.print("Dame otro numero: ");
         num2 = sc.nextInt();
         suma = num1 + num2;
         System.out.println("El resultado de la divicion es: " + suma);
