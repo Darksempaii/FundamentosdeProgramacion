@@ -6,7 +6,9 @@ public class OperadoresAsignacion {
 
 
     public static void main(String[] args) {
-        int a = 20, b = 10, c, d, e = 10, f = 4, g = 9;
+        //Declaracion de variables y sus valores
+        int a = 20, b = 10, e = 10, f = 4;
+        //Salida a consola y sus Asignaciones
         a = (a + 1);
         b = (b - 1);
         e = (e * 2);
