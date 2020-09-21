@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.darksempaii.fprogramacion;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.*;
+
 public class PreciodeVenta {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Entrada Grafica
+        String costo1 = JOptionPane.showInputDialog("Ingrese el Costo de fabricacion del automovil");
+        //Conversion y Aritmetica del programa
+        double costo2 = Double.parseDouble(costo1);
+        double impuesto = (costo2/100)*16;
+        double total = (costo2+impuesto);
+        //Salida Grafica
+        JOptionPane.showMessageDialog(null, "El impuesto del automovil es de " + impuesto + " y el total del automovil seria " + total);
+        
+        
     }
     
 }
