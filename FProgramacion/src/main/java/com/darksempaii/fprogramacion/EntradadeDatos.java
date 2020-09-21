@@ -11,8 +11,9 @@ public class EntradadeDatos {
         String edad = JOptionPane.showInputDialog("Introduce tu nombre por favor");
         //conversion a de la variable
         int edad_usuario = parseInt(edad);
+        edad_usuario++;
         //salida grafica
-        JOptionPane.showMessageDialog(null, "Hola " + nombre_usuario + " el siguiente año tendras " + (edad_usuario + 1) + " años.");
+        JOptionPane.showMessageDialog(null, "Hola " + nombre_usuario + " el siguiente año tendras " + edad_usuario + " años.");
     }
 
 }
