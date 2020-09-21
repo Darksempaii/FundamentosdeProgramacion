@@ -1,21 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.darksempaii.fprogramacion;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.*;
+
 public class EntradaValoresDobles {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Entrada grafica
+        String num1 = JOptionPane.showInputDialog("Introduce tu numero por favor");
+        //conversion
+        double num2 = Double.parseDouble(num1);
+        //salida a consola
+        System.out.print("La raiz de " + num2 + " es ");
+        System.out.printf("%1.3f", Math.sqrt(num2));
+
     }
-    
+
 }
