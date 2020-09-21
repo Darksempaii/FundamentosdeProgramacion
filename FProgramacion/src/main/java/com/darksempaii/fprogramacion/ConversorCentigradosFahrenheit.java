@@ -1,21 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.darksempaii.fprogramacion;
 
-/**
- *
- * @author Darksempaii
- */
+import java.util.Scanner;
+
+
 public class ConversorCentigradosFahrenheit {
 
-    /**
-     * @param args the command line arguments
-     */
+ 
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese la temperatura en grados centígrados: ");
+        double c = sc.nextDouble();
+        double f = 9 / 5.0 * c + 32;
+        System.out.println(c + " grados Celsius equivalen a " + f + " grados Fahrenheit");
     }
-    
 }
