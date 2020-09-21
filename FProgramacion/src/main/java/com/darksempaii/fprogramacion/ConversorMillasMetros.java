@@ -1,5 +1,5 @@
 
-package com.darksempaii.fprogramacion25;
+package com.darksempaii.fprogramacion;
 
 //Clases Importadas
 import javax.swing.JOptionPane;

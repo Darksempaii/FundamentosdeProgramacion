@@ -1,5 +1,5 @@
 
-package com.darksempaii.fprogramacion25;
+package com.darksempaii.fprogramacion;
 
 
 public class OperadoresLogicos {

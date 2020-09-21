@@ -1,4 +1,4 @@
-package com.darksempaii.fprogramacion25;
+package com.darksempaii.fprogramacion;
 //Clases importadas
 import java.util.Scanner;
 

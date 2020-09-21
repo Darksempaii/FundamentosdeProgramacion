@@ -1,4 +1,4 @@
-package com.darksempaii.fprogramacion25;
+package com.darksempaii.fprogramacion;
 
 import javax.swing.*;
 
