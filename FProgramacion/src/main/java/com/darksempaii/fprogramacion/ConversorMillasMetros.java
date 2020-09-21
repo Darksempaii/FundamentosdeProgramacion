@@ -1,17 +1,19 @@
 
 package com.darksempaii.fprogramacion;
 
-import java.util.Scanner;
-
+//Clases Importadas
+import javax.swing.JOptionPane;
 
 public class ConversorMillasMetros {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese la distancia en millas: ");
-        double distancia = sc.nextDouble();
-        double metros = distancia * 1609;
-        System.out.println("La distancia en Metros es: " +metros);
+        //Entrada Grafica
+        String distancia1 = JOptionPane.showInputDialog("Ingrese la distancia en millas");
+        //Conversion de String a Double y Operacion Aritmetica
+        double distancia2 = Double.parseDouble(distancia1);
+        double metros = distancia2 * 1609;
+        //Salida Gafica
+        JOptionPane.showMessageDialog(null, "La distancia en Metros es: " +metros);
     }
 
 }
