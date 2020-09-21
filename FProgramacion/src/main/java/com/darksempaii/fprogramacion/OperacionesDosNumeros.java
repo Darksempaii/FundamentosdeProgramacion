@@ -1,5 +1,5 @@
 package com.darksempaii.fprogramacion;
-
+//Clases importadas
 import java.util.Scanner;
 
 public class OperacionesDosNumeros {
