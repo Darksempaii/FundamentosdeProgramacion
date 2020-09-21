@@ -1,4 +1,4 @@
-package com.darksempaii.fprogramacion;
+package com.darksempaii.fprogramacion25;
 
 import javax.swing.JOptionPane;
 
