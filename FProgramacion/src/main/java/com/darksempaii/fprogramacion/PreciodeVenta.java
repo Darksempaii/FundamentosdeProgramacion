@@ -1,19 +1,20 @@
 
 package com.darksempaii.fprogramacion;
 
+import java.text.*;
 import javax.swing.*;
 
 public class PreciodeVenta {
 
     public static void main(String[] args) {
-        //Entrada Grafica
-        String costo1 = JOptionPane.showInputDialog("Ingrese el Costo de fabricacion del automovil");
-        //Conversion y Aritmetica del programa
-        double costo2 = Double.parseDouble(costo1);
-        double impuesto = (costo2/100)*16;
-        double total = (costo2+impuesto);
+        //Entrada Grafica y Conversion
+        double costo = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el Costo de fabricacion del automovil"));
+        //Aritmetica del programa
+        double impuesto = (costo/100)*16;
+        double total = (costo+impuesto);
         //Salida Grafica
-        JOptionPane.showMessageDialog(null, "El impuesto del automovil es de " + impuesto + " y el total del automovil seria " + total);
+        DecimalFormat df = new DecimalFormat("#0.00");
+        JOptionPane.showMessageDialog(null, "El impuesto del automovil es de " + df.format(impuesto) + " pesos y el total del automovil seria " + df.format(total)+ " pesos");
         
         
     }
