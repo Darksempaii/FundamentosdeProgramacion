@@ -2,19 +2,19 @@
 package com.darksempaii.fprogramacion;
 
 //clases importadas
-import javax.swing.JOptionPane;
-
+import java.text.*;
+import javax.swing.*;
 
 public class ConversorCentigradosFahrenheit {
 
  
     public static void main(String[] args) {
-        //Entrada grafica
-        String c1 = JOptionPane.showInputDialog("Ingrese la temperatura en grados centígrados");
-        //Conversion de String a Double y Operacion Aritmetica
-        double c2 = Double.parseDouble(c1);
-        double f = 9 / 5 * c2 + 32;
+        //Entrada grafica y Conversion de String a Double
+         double c = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la temperatura en grados centígrados"));
+        //Operacion Aritmetica
+        double f = 9 / 5 * c + 32;
         //Salida Grafica
-        JOptionPane.showMessageDialog(null, c2 + " grados Celsius equivalen a " + f + " grados Fahrenheit");
+        DecimalFormat df = new DecimalFormat("#0.00");
+        JOptionPane.showMessageDialog(null, df.format(c) + " grados Celsius equivalen a " + df.format(f) + " grados Fahrenheit");
     }
 }
