@@ -9,7 +9,7 @@ public class EntradaValoresDobles {
         String num1 = JOptionPane.showInputDialog("Introduce tu numero por favor");
         //conversion
         double num2 = Double.parseDouble(num1);
-        //salida a consola
+        //salida a consola  
         System.out.print("La raiz de " + num2 + " es ");
         System.out.printf("%1.3f", Math.sqrt(num2));
 
