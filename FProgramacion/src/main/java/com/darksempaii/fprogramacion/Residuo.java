@@ -1,23 +1,21 @@
 package com.darksempaii.fprogramacion;
 
-import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
+import javax.swing.*;
 
 public class Residuo {
 
     public static void main(String[] args) {
-        //Variables
-        float c, r;
-        //Entrada
-        String num1 = JOptionPane.showInputDialog("Ingrese el dividendo");
-        String num2 = JOptionPane.showInputDialog("Ingrese el divisor");
-        //conversion de String a Float
-        float num3 = Float.parseFloat(num1);
-        float num4 = Float.parseFloat(num2);
+        //Entrada y conversion de String a Float
+        float num1 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el dividendo"));
+        float num2 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el divisor"));
         //Proceso
-        c = num3 / num4;
-        r = num3 % num3;
+        float c = num1 / num2;
+        float r = num1 % num2;
         //Salida
-        JOptionPane.showMessageDialog(null, "El conciente es: " + c + " y su residuo es de: " + r);
+        DecimalFormat residuo = new DecimalFormat("#0.00");
+        DecimalFormat conciente = new DecimalFormat("#0");
+        JOptionPane.showMessageDialog(null, "El conciente es: " + conciente.format(c) + " y su residuo es de: " + residuo.format(r));
     }
 
 }
