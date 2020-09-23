@@ -1,8 +1,8 @@
 
 package com.darksempaii.fprogramacion;
 
-import javax.swing.JOptionPane;
-import java.text.DecimalFormat;
+import javax.swing.*;
+import java.text.*;
 
 
 public class AreaCirculo {
