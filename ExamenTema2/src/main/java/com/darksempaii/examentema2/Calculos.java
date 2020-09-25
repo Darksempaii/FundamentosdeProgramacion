@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.darksempaii.examentema2;
 
-/**
- *
- * @author Darksempaii
- */
+package com.darksempaii.examentema2;
+import java.text.*;
+import javax.swing.*;
+
 public class Calculos {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Entradas
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el primer numero"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el segundo numero"));
+        double num3 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el tercer numero"));
+        //Aritmetica
+        double suma = num1+num2+num3;
+        double promedio = (num1+num2+num3)/3;
+        double producto = (num1*num2*num3);
+        //
+        JOptionPane.showMessageDialog(null, "El Suma " +suma +"\nPromedio "+promedio+"\nProducto "+producto);
     }
     
 }

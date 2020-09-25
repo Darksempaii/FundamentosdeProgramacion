@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.darksempaii.examentema2;
 
-/**
- *
- * @author Darksempaii
- */
+package com.darksempaii.examentema2;
+import java.text.*;
+import javax.swing.*;
+
 public class Hipotenusa {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Entradas
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese un numero"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese otro numero"));
+        //Operacion aritmetica
+        double solucion = (num1*num1)+(num2*num2);
+        solucion =  Math.sqrt(solucion);
+        //Salida y formato a decimales
+        DecimalFormat df1 = new DecimalFormat("#0.000");
+        JOptionPane.showMessageDialog(null, "La solucion es: " +df1.format(solucion));
     }
     
 }
