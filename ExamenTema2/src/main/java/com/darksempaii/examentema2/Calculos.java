@@ -9,7 +9,7 @@ package com.darksempaii.examentema2;
  *
  * @author Darksempaii
  */
-public class Version2 {
+public class Calculos {
 
     /**
      * @param args the command line arguments

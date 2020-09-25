@@ -9,7 +9,7 @@ package com.darksempaii.examentema2;
  *
  * @author Darksempaii
  */
-public class Version1 {
+public class Cilindro {
 
     /**
      * @param args the command line arguments

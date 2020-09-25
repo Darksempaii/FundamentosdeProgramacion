@@ -9,7 +9,7 @@ package com.darksempaii.examentema2;
  *
  * @author Darksempaii
  */
-public class Version3 {
+public class Hipotenusa {
 
     /**
      * @param args the command line arguments
