@@ -15,7 +15,8 @@ public class Calculos {
         double promedio = (num1+num2+num3)/3;
         double producto = (num1*num2*num3);
         //
-        JOptionPane.showMessageDialog(null, "El Suma " +suma +"\nPromedio "+promedio+"\nProducto "+producto);
+        DecimalFormat df1 = new DecimalFormat("#0.000");
+        JOptionPane.showMessageDialog(null, "El Suma " +suma +"\nPromedio "+promedio+"\nProducto "+df1.format(producto));
     }
     
 }
