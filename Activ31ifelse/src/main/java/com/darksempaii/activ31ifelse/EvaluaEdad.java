@@ -9,10 +9,8 @@ public class EvaluaEdad {
         edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el radio del circulo"));
         if (edad >= 18) {
             JOptionPane.showMessageDialog(null, "Eres mayor de Edad");
-
         } else {
             JOptionPane.showMessageDialog(null, "Eres menor de Edad");
-
         }
 
     }
