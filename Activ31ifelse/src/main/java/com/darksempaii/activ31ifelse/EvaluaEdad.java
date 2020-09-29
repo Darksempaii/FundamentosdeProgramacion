@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.darksempaii.activ31ifelse;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.*;
+
 public class EvaluaEdad {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int edad;
+        edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el radio del circulo"));
+        if (edad >= 18) {
+            JOptionPane.showMessageDialog(null, "Eres mayor de Edad");
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Eres menor de Edad");
+
+        }
+
     }
-    
+
 }
