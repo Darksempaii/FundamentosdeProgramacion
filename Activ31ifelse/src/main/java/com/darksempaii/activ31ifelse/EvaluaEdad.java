@@ -5,8 +5,7 @@ import javax.swing.*;
 public class EvaluaEdad {
 
     public static void main(String[] args) {
-        int edad;
-        edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el radio del circulo"));
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el radio del circulo"));
         if (edad >= 18) {
             JOptionPane.showMessageDialog(null, "Eres mayor de Edad");
         } else {
