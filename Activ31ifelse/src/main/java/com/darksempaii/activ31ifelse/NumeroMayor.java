@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.darksempaii.activ31ifelse;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.*;
+
 public class NumeroMayor {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer numero"));
+        int num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo numero"));
+        if (num1 == num2) {
+            JOptionPane.showMessageDialog(null,"Los numeros son igual");
+        } else if (num1 > num2) {
+            JOptionPane.showMessageDialog(null, num1+ " es mayor que " +num2);
+        } else if (num1 < num2) {
+            JOptionPane.showMessageDialog(null, num1+ " es menor que " +num2);
+        }
     }
-    
+
 }
