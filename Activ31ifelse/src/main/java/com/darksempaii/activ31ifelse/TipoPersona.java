@@ -1,21 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.darksempaii.activ31ifelse;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.*;
+
 public class TipoPersona {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int edad;
+        do {
+            edad = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese la edad de la persona","Dato",JOptionPane.QUESTION_MESSAGE));
+            if (edad >= 0 && edad <= 5) {
+                JOptionPane.showMessageDialog(null, "Es un bebe", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+            } else if (edad >= 6 && edad <= 12) {
+                JOptionPane.showMessageDialog(null, "Es un niño", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+            } else if (edad >= 13 && edad <= 18) {
+                JOptionPane.showMessageDialog(null, "Es un Adolecente", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+            } else if (edad >= 19 && edad <= 25) {
+                JOptionPane.showMessageDialog(null, "Es un Joven", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+            } else if (edad >= 26 && edad <= 60) {
+                JOptionPane.showMessageDialog(null, "Es un Adulto", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+            } else if (edad >= 60) {
+                JOptionPane.showMessageDialog(null, "Es un Adulto de la 3º edad", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(null, "A ingresado una edad incorrecta.\nPor favor intentalo de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        } while (edad < 0);
     }
-    
+
 }
