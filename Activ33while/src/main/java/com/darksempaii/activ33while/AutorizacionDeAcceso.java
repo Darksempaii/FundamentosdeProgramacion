@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.darksempaii.activ33while;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.*;
+
 public class AutorizacionDeAcceso {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String clave = "cesar";
+        String pass = "";
+        while (clave.equals(pass) == false) {
+            pass = JOptionPane.showInputDialog(null, "Introduce la contraseña, por favor", "Login", JOptionPane.QUESTION_MESSAGE);
+            if (clave.equals(pass) == false) {
+                JOptionPane.showMessageDialog(null, "La contraseña es incorrecta.\nPor favor intentalo de nuevo", "Login", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+        JOptionPane.showMessageDialog(null, "La contraseña es correcta, Acceso permitido", "Login", JOptionPane.INFORMATION_MESSAGE);
     }
-    
+
 }
