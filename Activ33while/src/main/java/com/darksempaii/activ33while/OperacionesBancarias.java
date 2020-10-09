@@ -1,22 +1,21 @@
-
 package com.darksempaii.activ33while;
 
+import javafx.scene.*;
 import javax.swing.*;
 
 public class OperacionesBancarias {
 
-    
     public static void main(String[] args) {
         //Arreglos de Objetos
         String principal[] = {"Depositos", "Retiros", "Consulta", "Salir"};
         String cantidades[] = {"50", "100", "200", "500", "1000", "Ingresar un m0nto", "cancelar"};
         //Variables
         int intento = 0;
-        int pass, menu, cantidad, ingreso;
+        int pass = 0, menu, cantidad, ingreso, salir;
         int clave = 1234;
         int monto = 5000;
         //Login
-        do {
+        while (intento >= 0 && intento < 3) {
             intento++;
             pass = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el NIP", "Login", JOptionPane.QUESTION_MESSAGE));
             if (clave == pass) {
@@ -25,16 +24,17 @@ public class OperacionesBancarias {
             } else if (clave != pass) {
                 JOptionPane.showMessageDialog(null, "contraseña incorrecta le quedan " + intento + " de 3", "Login", JOptionPane.WARNING_MESSAGE);
             }
-        } while (intento >= 0 && intento < 3);
+        }
         intento = 1;
         if (clave != pass) {
             //Login incorrecto
             JOptionPane.showMessageDialog(null, "Exedio el numero de intentos \nPor favor intentelo mas tarde", "Respuesta", JOptionPane.ERROR_MESSAGE);
         } else if (clave == pass) {
             //Login correcto
-            do {
+            while (true) {
                 menu = JOptionPane.showOptionDialog(null, "Que accion desea realizar", "Banca", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, principal, "Retiros");
                 System.out.println(menu);
+                OUTER:
                 switch (menu) {
                     case 0:
                         //Depositos
@@ -148,21 +148,25 @@ public class OperacionesBancarias {
                         JOptionPane.showMessageDialog(null, "Su monto ahora es de: " + monto, "Consulta", JOptionPane.INFORMATION_MESSAGE);
                         break;
                     case 3:
-                        //Salida
-                        intento = JOptionPane.showConfirmDialog(null, "Desea salir del su cuenta");
-                        break;
+                        salir = JOptionPane.showConfirmDialog(null, "¿Estas seguro de que quieres salir?");
+                        switch (salir) {
+                            case 0:
+                                JOptionPane.showMessageDialog(null, "Se ha cerrado sesion correctamente", "Login", JOptionPane.INFORMATION_MESSAGE);
+                                System.exit(0);
+                            case 1:
+                                //retornando al menu
+                                break OUTER;
+                            default:
+                                //camino al easter egg 
+                                System.out.println("este boton lleva al easter egg y a la vez al menu \nque coincidencia no?");
+                        }
                     default:
-                        break;
+                        System.out.println("Bueno que pase un buen dia");
                 }
 
-            } while (intento >= 1 && intento <= 2);
-        
-        }
-        
-                    if (clave == pass) {   
-            JOptionPane.showMessageDialog(null,"Se ha cerrado sesion correctamente","Login", JOptionPane.INFORMATION_MESSAGE);
-            
             }
+
+        }
     }
 
 }
