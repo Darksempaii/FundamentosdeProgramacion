@@ -20,6 +20,7 @@ public class ComprobacionMail {
         }else {
             JOptionPane.showMessageDialog(null, "No es correcto","e-Mail", JOptionPane.ERROR_MESSAGE);
         }
+        System.exit(0);
     }
     
 }
