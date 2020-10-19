@@ -1,21 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package For;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.JOptionPane;
+
+
 public class ComprobacionMail {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        boolean arroba=false;
+        String mail =JOptionPane.showInputDialog(null,"Ingresa tu direccion de correo","e-Mail",JOptionPane.QUESTION_MESSAGE);
+        for (int i = 0; i < mail.length(); i++) {
+            if (mail.charAt(i)=='@') {
+                arroba=true;
+            }
+        }
+        if (arroba == true) {
+            JOptionPane.showMessageDialog(null, "Es correcto","e-Mail", JOptionPane.INFORMATION_MESSAGE);
+        }else {
+            JOptionPane.showMessageDialog(null, "No es correcto","e-Mail", JOptionPane.ERROR_MESSAGE);
+        }
     }
     
 }
