@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package For;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.JOptionPane;
+
 public class MuestraMultiplosDeCinco {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int suma = 0;
+        for (int i = 10; i <= 200; i += 5) {
+            suma = suma + i;
+            System.out.println("numero "+i+" suma "+suma);
+        }
+        JOptionPane.showMessageDialog(null, "Suma de pares: " + suma, "Respuesta", JOptionPane.INFORMATION_MESSAGE);
     }
-    
+
 }
