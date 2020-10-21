@@ -12,7 +12,7 @@ public class ProyeccionPoblacionVictoria {
         int poblacion = 300000;
         int incremento = 0;
         int decremento = 0;
-        int d1, i1, itotal;
+        int d1, i1;
         for (int i = 0; i <= 5; i++) {
             //Operacion temporal
             i1 = (poblacion / 100)*5;
