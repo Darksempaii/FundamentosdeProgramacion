@@ -1,21 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package For;
 
-/**
- *
- * @author Darksempaii
- */
+package For;
+//Librerias Importadas
+import javax.swing.JOptionPane;
+
+
 public class TablaDeMultiplicar {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
     
+    public static void main(String[] args) throws InterruptedException {
+        //Variables Empleadas
+        int resultado = 0;
+        int multiplicar = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese un numero","Dato",JOptionPane.QUESTION_MESSAGE));
+        //Ciclo for y multiplicacion
+        for (int i = 1; i <= 10; i++) {
+            resultado = multiplicar * i;
+            System.out.println(multiplicar+"x"+i+"="+resultado);
+            Thread.sleep(1500);
+        }
+        //Muestra de resultados
+        //JOptionPane.showMessageDialog(null, "Suma de pares: " + resultado, "Respuesta", JOptionPane.INFORMATION_MESSAGE);
+        System.exit(0);
+    }
+
 }
