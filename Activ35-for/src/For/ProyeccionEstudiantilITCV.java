@@ -1,21 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package For;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.JOptionPane;
+
+
 public class ProyeccionEstudiantilITCV {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+
+    public static void main(String[] args) throws InterruptedException {
+        //Varables
+        int alumnos = 2100;
+        int incremento = 0;
+        int i1;
+        for (int i = 0; i <= 3; i++) {
+            //Operacion temporal
+            i1 = (alumnos / 100)*7;
+            //Acumulacion de la temporal
+            incremento = incremento + i1;
+            
+            //Operacion Principal
+            alumnos = alumnos + i1;
+            //Resultado RAW
+            System.out.print(alumnos + " " + i1);
+            System.out.println(incremento);
+            //Interrupcion Programada (milesimas de segunto)
+            Thread.sleep(750);
+        }
+        //Resultado en JOptionPane
+        JOptionPane.showMessageDialog(null,"Total de Alumnos es "+alumnos+"\nIncremento de "+incremento+"\nen los proximos 3 años","Estadistica a 5 años", JOptionPane.INFORMATION_MESSAGE);
+        //Salida del programa
+        System.exit(0);
     }
     
 }
