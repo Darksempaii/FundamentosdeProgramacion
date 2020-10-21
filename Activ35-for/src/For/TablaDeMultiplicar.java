@@ -15,10 +15,11 @@ public class TablaDeMultiplicar {
         for (int i = 1; i <= 10; i++) {
             resultado = multiplicar * i;
             System.out.println(multiplicar+"x"+i+"="+resultado);
-            Thread.sleep(1500);
+            //interrupcion programada
+            Thread.sleep(750);
         }
         //Muestra de resultados
-        //JOptionPane.showMessageDialog(null, "Suma de pares: " + resultado, "Respuesta", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Por favos compruebe la consola", "confirmacion de respuesta", JOptionPane.INFORMATION_MESSAGE);
         System.exit(0);
     }
 
