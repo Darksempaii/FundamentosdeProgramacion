@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package For;
 
-/**
- *
- * @author Darksempaii
- */
 public class MuestraNumeros {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+//Clase main con interrupciones
+    public static void main(String[] args) throws InterruptedException {
+        //Ciclo de conteo
+        for (int i = 10; i > 0; i--) {
+            System.out.println(i);
+            //Interrupcion de 750 milesimas de segundo
+            Thread.sleep(750);
+        }
+        System.exit(0);
     }
-    
+
 }
