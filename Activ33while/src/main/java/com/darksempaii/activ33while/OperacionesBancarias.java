@@ -1,6 +1,5 @@
 package com.darksempaii.activ33while;
 
-import javafx.scene.*;
 import javax.swing.*;
 
 public class OperacionesBancarias {
