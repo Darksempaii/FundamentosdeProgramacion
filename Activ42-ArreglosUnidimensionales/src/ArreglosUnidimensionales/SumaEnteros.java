@@ -6,7 +6,7 @@ public class SumaEnteros {
 
     
     public static void main(String[] args) throws InterruptedException {
-        int[] numeros = {24, 5, 3, 51, 63, 7, 67, 90, 32, 43};
+        int[] numeros = { 24, 9, 3, 51, 83, 7, 67, 90, 32, 43};
         int suma = 0;
         System.out.print("los elementos del arreglo son: ");
         for (int i = 0; i < numeros.length; i++) {  
