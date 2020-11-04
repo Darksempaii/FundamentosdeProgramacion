@@ -6,7 +6,7 @@ public class BuscaPaíses {
 
     public static void main(String[] args) {
         //Variables y array,s
-        String[] paises = {"Mexico","España","Japon","Corea del sur","Rusia","China"};
+        String[] paises = {"Mexico","España","Japon","Corea del sur","Rusia","China","Canada","Francia","India","Filipinas","alemania"};
         String nombre = JOptionPane.showInputDialog(null,"Inserta el nombre de un pais"," Buscador",JOptionPane.QUESTION_MESSAGE);
         int intento= 0;
         //se cuencia de busqueda
