@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ArreglosUnidimensionales;
 
-/**
- *
- * @author Darksempaii
- */
 public class EvaluacionFuncion {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws InterruptedException {
+        //Arreglos
+        int x[] = {2, 2, 2, 2, 4, 4, 4, 4, 6, 6, 6, 6};
+        int y[] = {3, 6, 9, 12, 3, 6, 9, 12, 3, 6, 9, 12};
+        //Construccion de la tabla
+        String cabecera = "\n\t función de f(x,y)=x*2+y\n";
+        cabecera += "\nX\tY\tF(x,y)=x*2+y\n";
+        cabecera += "----\t----\t--------------\n";
+        //Tabla
+        System.out.print(cabecera);
+        for (int i = 0; i < x.length; i++) {
+            System.out.print(y[i] + "\t" + x[i] + "\t" + (x[i] * 2 + y[i]) + "\n");
+            Thread.sleep(500);
+        }
     }
-    
+
 }
