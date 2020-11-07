@@ -25,9 +25,8 @@ public class DeterminaRango {
             System.out.print(numeros[i]+", ");
         }
         System.out.println("");
-        System.out.println("y el valor menor es: "+ menor);
-        System.out.println("y el valor mayor es: "+ mayor);
-        JOptionPane.showMessageDialog(null, "El valor menor del arreglo es: " + menor+ " \ny el valor mayor es: "+mayor, "Respuesta", JOptionPane.INFORMATION_MESSAGE);
+        System.out.println("El rango de mínimo y máximo del arreglo es: "+ menor+" - "+mayor);
+        JOptionPane.showMessageDialog(null, "El rango de mínimo y máximo del arreglo es: "+menor+" - "+mayor , "Respuesta", JOptionPane.INFORMATION_MESSAGE);
     }
 
 }
