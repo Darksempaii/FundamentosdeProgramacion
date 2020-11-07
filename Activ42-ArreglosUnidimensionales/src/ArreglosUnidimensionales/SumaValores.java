@@ -19,7 +19,7 @@ public class SumaValores {
         for (int i = 0; i < numeros.length; i++) {
             suma = suma + numeros[i];
         }
-        JOptionPane.showMessageDialog(null, "El resultado de la suma es: "+suma,"Respuesta", JOptionPane.INFORMATION_MESSAGE);;
+        JOptionPane.showMessageDialog(null, "El resultado de la suma es: "+suma,"Respuesta", JOptionPane.INFORMATION_MESSAGE);
     }
     
 }
