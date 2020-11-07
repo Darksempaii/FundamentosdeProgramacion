@@ -1,21 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ArreglosUnidimensionales;
 
-/**
- *
- * @author Darksempaii
- */
+import javax.swing.JOptionPane;
+
+
 public class SumaValores {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        int cantidad;
+        cantidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuantos numeros van a ingresas", "Cantidad", JOptionPane.QUESTION_MESSAGE));
+        int[] numeros = new int[cantidad];
+        for (int i = 0; i < numeros.length; i++) {
+            numeros[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Engresa tu "+(i+1)+"º dato", "Cantidad", JOptionPane.QUESTION_MESSAGE));
+        }
+        int suma = 0;
+        System.out.print("los numeros introducidos son: ");
+        for (int i = 0; i < numeros.length; i++) {
+            suma = suma + numeros[i];
+        }
+        JOptionPane.showMessageDialog(null, "El resultado de la suma es: "+suma,"Respuesta", JOptionPane.INFORMATION_MESSAGE);;
     }
     
 }
