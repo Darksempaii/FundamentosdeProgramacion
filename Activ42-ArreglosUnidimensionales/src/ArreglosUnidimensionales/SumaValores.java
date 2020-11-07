@@ -12,7 +12,7 @@ public class SumaValores {
         cantidad = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuantos numeros van a ingresas", "Cantidad", JOptionPane.QUESTION_MESSAGE));
         int[] numeros = new int[cantidad];
         for (int i = 0; i < numeros.length; i++) {
-            numeros[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Engresa tu "+(i+1)+"º dato", "Cantidad", JOptionPane.QUESTION_MESSAGE));
+            numeros[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa tu "+(i+1)+"º dato", "Cantidad", JOptionPane.QUESTION_MESSAGE));
         }
         int suma = 0;
         System.out.print("los numeros introducidos son: ");
