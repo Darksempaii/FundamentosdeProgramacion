@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package activ45.arreglosbiidimensionales;
 
-/**
- *
- * @author cesar
- */
+
 public class ConsecutivosColumnas {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+
+    public static void main(String[] args) throws InterruptedException {
+        //Declaracion del arreglo
+        int [][] numeros = {{1,6,11,16,21,26},{2,7,12,17,22,27},{3,8,13,18,23,28},{4,9,14,19,24,29},{5,10,15,20,25,30}};
+        //Salida a consola 
+        System.out.println("");
+        for (int i = 0; i < numeros.length; i++) {
+            for (int j = 0; j < numeros[i].length; j++) {
+                System.out.print(numeros[i][j] + "\t");
+                Thread.sleep(250);
+            }
+            System.out.println("");
+        }
+        System.out.println("");
     }
     
 }
