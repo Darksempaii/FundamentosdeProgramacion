@@ -6,7 +6,7 @@ public class Triangulo {
     private int Base;
 
 
-    public Triangulo(int Base, int Altura) {//metodo constructor
+    public Triangulo(int Base, int Altura) {//metodo constructor 
         this.Altura = Altura;
         this.Base = Base;
     }
