@@ -14,9 +14,11 @@ public class PruebaAlumno {
         System.out.println(jose);
         System.out.println("Calif min: "+jose.calcularMinimo());
         System.out.println("Calif max: "+jose.calcularMaximo());
+        System.out.println(jose.tipoAlumno());
         System.out.println(josefina);
         System.out.println("Calif min: "+josefina.calcularMaximo());
         System.out.println("Calif max: "+josefina.calcularMinimo());
+        System.out.println(josefina.tipoAlumno());
     }
     
 }
