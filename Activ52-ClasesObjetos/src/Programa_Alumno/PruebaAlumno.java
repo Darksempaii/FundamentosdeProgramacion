@@ -1,5 +1,5 @@
 
-package Activ52_ClasesObjetos;
+package Programa_Alumno;
 
 
 public class PruebaAlumno {

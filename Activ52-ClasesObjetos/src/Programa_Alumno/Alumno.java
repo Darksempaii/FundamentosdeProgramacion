@@ -1,4 +1,4 @@
-package Activ52_ClasesObjetos;
+package Programa_Alumno;
 
 public class Alumno {
     //declaracion de variables
