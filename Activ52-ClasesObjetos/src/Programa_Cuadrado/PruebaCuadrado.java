@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Programa_Cuadrado;
 
-/**
- *
- * @author cesar
- */
 public class PruebaCuadrado {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int c1 = 5,c2 = 7;
+        //1º cuadro
+        Cuadrado C1 = new Cuadrado(c1);
+        System.out.println(C1);
+        System.out.println("El area es de: " + C1.calcularArea());
+        System.out.println("El perimetro es de: "+C1.calculaPerimetro()+"\n");
+        //2º cuadro
+        Cuadrado C2 = new Cuadrado(c2);
+        System.out.println(C2);
+        System.out.println("El area es de: " + C2.calcularArea());
+        System.out.println("El perimetro es de: "+C2.calculaPerimetro());
+        
     }
-    
+
 }
