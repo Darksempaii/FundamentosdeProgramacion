@@ -20,7 +20,7 @@ public class Alcancia {
     
         return "El ahorro total de "+Nombre+" es de: "+calcualarTotalAhorrado()+"\nDinero ahorrado que no esta en la alcancia "+noAhorrado+"\ny el total de billetes es de \n"+ mostrarMonedas();
     }
-
+    //metodo ahorrar
     private void Ahorrar() {
         boolean Bucle = true;
         int Monto = monto;
@@ -48,7 +48,7 @@ public class Alcancia {
         } while (Bucle);
         monto = Monto;
     }
-
+    //metodo Mostrar ahorros indexados
     public String mostrarMonedas() {
         String mostrar = "";
         if (monto != 0) {
@@ -59,7 +59,7 @@ public class Alcancia {
         }
         return mostrar;
     }
-
+    //Metodo Calculo del total del ahorro
     public int calcualarTotalAhorrado() {
         Ahorrar();
         int ahorro = 0;
@@ -71,7 +71,7 @@ public class Alcancia {
         ahorro = ahorro + noAhorrado;
         return ahorro;
     }
-
+    //Metodo borrar ahorro
     public String romperAlcancia() {
         for (int i = 0; i < billetes.length; i++) {
             billetes[i] = 0;
