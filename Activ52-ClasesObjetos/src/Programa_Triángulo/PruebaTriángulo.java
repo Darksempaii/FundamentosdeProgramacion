@@ -9,6 +9,8 @@ public class PruebaTriángulo {
         Triangulo uno = new Triangulo(t1, t1);
         Triangulo dos = new Triangulo(t2, t2);
         System.out.println(uno);
+        System.out.println("");
+        System.out.println(dos);
     }
 
 }
